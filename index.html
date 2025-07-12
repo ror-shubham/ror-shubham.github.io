@@ -1,627 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Shubham</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.bundle.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f7;
+        }
+        .print-button {
+            transition: all 0.3s ease;
+        }
+        .print-button:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+        .icon {
+            color: #4a5568;
+        }
+        .sidebar .icon {
+            color: #a0aec0;
+        }
+        .sidebar a:hover {
+            color: #fff;
+        }
+        .sidebar a:hover .icon {
+            color: #fff;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 1cm;
+            }
+            html, body {
+                background-color: #fff !important;
+                font-size: 8.5pt !important; /* Further font reduction */
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            .print-button-container {
+                display: none !important;
+            }
+            .resume-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                border: none !important;
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .sidebar {
+                background-color: #2d3748 !important;
+                width: 34% !important; /* Adjusted width */
+            }
+            .main-content {
+                 width: 66% !important; /* Adjusted width */
+            }
+            .sidebar h2, .sidebar h3, .sidebar p, .sidebar a {
+                color: #fff !important;
+            }
+            .sidebar .icon {
+                 color: #a0aec0 !important;
+            }
+             .main-content h2, .main-content h3, .main-content h4 {
+                color: #2d3748 !important;
+            }
+        }
+    </style>
 </head>
+<body class="bg-gray-100">
 
-<body>
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation" style="margin-bottom: 0; border-radius: 0">
-    <div class="navbar-brand">
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/ror-shubham" class="icon is-large has-text-light">
-          <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
+    <div class="container mx-auto p-4 sm:p-8 print:p-0">
+         <!-- Print Button -->
+        <div class="print-button-container text-center mb-6">
+            <button onclick="window.print()" class="print-button bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700">
+                <i class="fas fa-print mr-2"></i> Print to PDF
+            </button>
+        </div>
+
+        <!-- Resume Container -->
+        <div class="resume-container bg-white rounded-lg shadow-2xl mx-auto max-w-4xl">
+            <div class="flex flex-col lg:flex-row print:flex-row">
+                <!-- Sidebar -->
+                <aside class="sidebar bg-gray-800 text-white w-full lg:w-1/3 p-8 print:p-5">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <h1 class="text-4xl font-bold text-center lg:text-left print:text-2xl">Shubham</h1>
+                        <p class="text-lg text-gray-300 mt-1 text-center lg:text-left print:text-base">Full Stack Developer</p>
+                    </div>
+
+                    <div class="mt-8 print:mt-6">
+                        <h2 class="text-xl font-semibold border-b-2 border-gray-500 pb-1 print:text-base">CONTACT</h2>
+                        <ul class="mt-3 space-y-2 text-gray-300 print:mt-2 print:space-y-1.5">
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt w-5 icon"></i>
+                                <a href="tel:+918954236768" class="hover:text-white transition-colors duration-300 text-sm">+91 8954236768</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope w-5 icon"></i>
+                                <a href="mailto:ror.shubh@gmail.com" class="hover:text-white transition-colors duration-300 text-sm">ror.shubh@gmail.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-linkedin w-5 icon"></i>
+                                <a href="https://linkedin.com/in/ror-shubham/" target="_blank" class="hover:text-white transition-colors duration-300 text-sm">/in/ror-shubham</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-globe w-5 icon"></i>
+                                <a href="https://w3shubh.com" target="_blank" class="hover:text-white transition-colors duration-300 text-sm">w3shubh.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 print:mt-6">
+                        <h2 class="text-xl font-semibold border-b-2 border-gray-500 pb-1 print:text-base">SKILLS</h2>
+                        <div class="mt-3 space-y-3 text-gray-300 text-sm print:space-y-2 print:mt-2">
+                           <div>
+                                <h3 class="font-bold text-white mb-1 text-base print:text-sm">Frontend</h3>
+                                <p class="leading-snug">ReactJS, TypeScript, JavaScript, Vue.js, GraphQL, Apollo, HTML/CSS, SCSS, PWA</p>
+                           </div>
+                           <div>
+                                <h3 class="font-bold text-white mb-1 text-base print:text-sm">Backend</h3>
+                                <p class="leading-snug">Python, Django, Flask, PySpark, Hive, Hadoop, Solidity</p>
+                           </div>
+                           <div>
+                                <h3 class="font-bold text-white mb-1 text-base print:text-sm">Databases & Pipelines</h3>
+                                <p class="leading-snug">MySQL, Relational Databases, DAG Pipeline Management</p>
+                           </div>
+                           <div>
+                                <h3 class="font-bold text-white mb-1 text-base print:text-sm">Architecture & DevOps</h3>
+                                <p class="leading-snug">System Architecture, Microservices, CI/CD, Component Libraries, State Management, PagerDuty, Amazon SES</p>
+                           </div>
+                        </div>
+                    </div>
+
+                     <div class="mt-8 print:mt-6">
+                        <h2 class="text-xl font-semibold border-b-2 border-gray-500 pb-1 print:text-base">EDUCATION</h2>
+                        <div class="mt-3 print:mt-2">
+                            <h3 class="text-lg font-bold text-white print:text-base">IIT ROORKEE</h3>
+                            <p class="text-sm text-gray-300">2014 - 2019</p>
+                            <p class="text-gray-300 mt-1 text-sm leading-snug">Integrated M.Tech in Geological Technology</p>
+                        </div>
+                    </div>
+
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content w-full lg:w-2/3 p-8 print:p-5">
+                    <section>
+                        <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-indigo-500 pb-2 print:text-xl">SUMMARY</h2>
+                        <p class="mt-3 text-gray-700 leading-relaxed print:mt-2 print:leading-normal">
+                            A results-driven Full Stack Developer and IIT Roorkee '19 graduate with 8+ years of experience architecting and leading the development of high-performance web applications and complex data systems. Proven expertise in the ReactJS ecosystem, Python, Django, and Big Data technologies. Acknowledged for driving significant business outcomes, including generating substantial revenue, achieving major cost savings, and mentoring high-performing engineering teams.
+                        </p>
+                    </section>
+
+                    <section class="mt-6 print:mt-4">
+                        <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-indigo-500 pb-2 print:text-xl">WORK EXPERIENCE</h2>
+                        <div class="mt-4 space-y-4 print:mt-3 print:space-y-3">
+                            <!-- Job 1 -->
+                            <div class="job">
+                                <h3 class="text-xl font-semibold text-gray-900 print:text-base">Full Stack Developer</h3>
+                                <div class="flex justify-between items-baseline">
+                                    <p class="text-md font-medium text-indigo-600 print:text-sm">6sense</p>
+                                    <p class="text-sm text-gray-500">2020 - 2025</p>
+                                </div>
+                                <div class="mt-1 space-y-2 text-gray-700 text-sm print:space-y-1.5">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 print:text-sm">SI Tech Team & Backend Optimization</h4>
+                                        <ul class="list-disc list-outside mt-1 ml-4 space-y-0.5">
+                                            <li>Achieved over $230,000 in annualized savings by leading the decommissioning of the Sales Dashboard application and a legacy database.</li>
+                                            <li>Optimized a critical data pipeline DAG, reducing the daily run time by over 45 minutes.</li>
+                                            <li>Resolved over 50 high-priority security vulnerabilities in React and Django codebases.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800 print:text-sm">Sales Intelligence & Salesloft iFrame Integration</h4>
+                                        <ul class="list-disc list-outside mt-1 ml-4 space-y-0.5">
+                                            <li>Key member of the 3-person architect team for a new Sales Intelligence platform that generated over $20 million in revenue.</li>
+                                            <li>Led critical technology decisions, including migration to TypeScript and creation of a new reusable component library.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Job 2 -->
+                            <div class="job">
+                                <h3 class="text-xl font-semibold text-gray-900 print:text-base">Founding Engineer</h3>
+                                <div class="flex justify-between items-baseline">
+                                    <p class="text-md font-medium text-indigo-600 print:text-sm">OrangeSomething.com (incubated at Blinkit)</p>
+                                    <p class="text-sm text-gray-500">Jan 2020 - Jun 2020</p>
+                                </div>
+                                <ul class="list-disc list-outside mt-1 ml-4 space-y-0.5 text-gray-700 text-sm">
+                                    <li>Led migration from Shopify to a ReactJS SPA, improving load times from 12s to under 3s.</li>
+                                    <li>Mentored a junior developer and spearheaded development of a native Android app.</li>
+                                </ul>
+                            </div>
+                            <!-- Job 3 -->
+                             <div class="job">
+                                <h3 class="text-xl font-semibold text-gray-900 print:text-base">Frontend Web Developer</h3>
+                                <div class="flex justify-between items-baseline">
+                                    <p class="text-md font-medium text-indigo-600 print:text-sm">Ape Unit GmbH, Berlin</p>
+                                    <p class="text-sm text-gray-500">May 2018 - Oct 2019</p>
+                                </div>
+                                <ul class="list-disc list-outside mt-1 ml-4 space-y-0.5 text-gray-700 text-sm">
+                                    <li>Led development of a Blockchain Explorer for the Aeternity blockchain and managed a new tech team of four developers in India.</li>
+                                </ul>
+                            </div>
+                             <!-- Consolidated Experience -->
+                            <div class="job">
+                                <h3 class="text-xl font-semibold text-gray-900 print:text-base">Freelance & Early Full Stack Experience</h3>
+                                 <div class="flex justify-between items-baseline">
+                                     <p class="text-md font-medium text-indigo-600 print:text-sm">Various Clients</p>
+                                    <p class="text-sm text-gray-500">May 2016 - Dec 2020</p>
+                                </div>
+                                <ul class="list-disc list-outside mt-1 ml-4 space-y-0.5 text-gray-700 text-sm">
+                                    <li><b>TransformNow:</b> Designed and developed a Progressive Web App (PWA) from the ground up, achieving 90+ Lighthouse scores for performance, accessibility, and SEO.</li>
+                                    <li><b>Transcend Labs:</b> Developed a full-stack inventory and marketplace automation application using Python, Flask, and MySQL.</li>
+                                    <li><b>Kupiku:</b> Developed a web app named Repricer which notified users via SMS about item availability and price changes on online marketplaces (eBay, Amazon, Discogs). Stack: Flask, ReactJS, MySQL.</li>
+                                    <li><b>Faculty360:</b> Co-developed the front-end for a faculty recruitment platform. Stack: HTML, CSS, Bootstrap, Javascript.</li>
+                               </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
     </div>
-    <div class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a href="https://github.com/ror-shubham" class="icon is-large has-text-light">
-            <i class="fab fa-2x fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <section class="hero is-primary">
-    <div>
-      <div class="container">
-        <div class="level">
-          <div class="level-item has-text-centered">
-            <figure class="image is-128x128">
-              <img class="is-rounded" src="img/shubham.jpg">
-            </figure>
-          </div>
-        </div>
-        <div class="columns has-text-centered">
-          <div class="column">
-            <h1 class="title is-1">
-              Shubham
-            </h1>
-            <h2 class="subtitle">
-              Django | Python | Hadoop | Spark | ReactJS | Javascript Developer | IIT Roorkee '19
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<section class="section">
-  <div class="container">
-    <h1 class="title">Experience</h1>
-    <hr />
-    <div class="card">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/6sense.png" alt="6sense logo">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">6sense, Bangalore</span>
-              <span style="float: right">
-                <time datetime="2020-11">July 2020</time>
-                -
-                <time datetime="2025-04">Present</time>
-              </span>
-            </div>
-            <p class="subtitle is-6">Software Engineer III</p>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            Led frontend development of Sales Dashboards, building the app from scratch using ReactJS, JavaScript, GraphQL, and Apollo; responsible for architecture, CI/CD setup, and reusable component library.
-          </li>
-          <li>
-            Was part of architecture team for the merged Sales Intelligence app after Slintel acquisition; introduced TypeScript migration, new UI/UX design, and scalable frontend practices. The app is now contributing $20M+/year in revenue.
-          </li>
-          <li>
-            Designed and owned the full stack for Sales Intelligence Alerts, delivering 90,000+ customized alerts daily using PySpark, Amazon SES, and responsive email templates optimized for native clients like Outlook.
-          </li>
-          <li>
-            Built backend APIs for Salesloft iFrame integration with Sales Intelligence using Django and GraphQL.
-          </li>
-          <li>
-            Part of 6-member SI Tech Team responsible for production support (PagerDuty), SLA compliance, backend optimization, query tuning, security patching, and maintaining big data pipelines with Hive, Hadoop, and PySpark.
-          </li>
-          <li>
-            Key Technologies: ReactJS, TypeScript, GraphQL, Apollo, Django, Python, Hive, Hadoop, PySpark, Amazon SES, Jinja2.
-          </li>
-          <li>
-            Link: <a href="https://6sense.com/"> 6sense.com/ </a>
-          </li>
-        </div>
-      </div>
-    </div>
-    <div class="card card-gap">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/grofers.jpg" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">Blinkit - OrangeSomething.com, Gurgaon  </span>
-              <span style="float: right">
-                <time datetime="2019-11">Jan 2020</time>
-                -
-                <time datetime="Present">May 2020</time>
-              </span>
-            </div>
-            <p class="subtitle is-6">Software Development Engineer</p>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            OrangeSomething.com is a D2C platform making Beauty and Personal Care products affordable.
-          </li>
-          <li>
-            Was lead developer at OrangeSomething, and co-owned entire planning and implementation of tech developments.
-          </li>
-          <li>
-            Moved the front-end of the platform from Shopify to ReactJS SPA, bringing the average load time from 12 seconds to 2-3 seconds.
-          </li>
-          <li>
-            Developed an android app for the platform, leading to better customer retention. higher AOV and conversion.
-          </li>
-
-          <li>
-            Stack used: ReactJS, Javascript, HTML, CSS, Kotlin
-          </li>
-        </div>
-      </div>
-    </div>
-    <div class="card card-gap">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/transform.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">TransformNow  </span>
-              <span style="float: right">
-                <time datetime="2019-11">Oct 2019</time>
-                -
-                <time datetime="Present">Dec 2019</time>
-              </span>
-            </div>
-            <span class="subtitle is-6">Freelance Web Developer</span>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            TransformNow is product helping people eat healthy, planning their diets, helping them with ingredients and much more.
-          </li>
-          <li>
-            Developed the PWA from scratch.
-          </li>
-          <li>
-            Stack used: ReactJS, Javascript, HTML, CSS
-          </li>
-          <li>
-            Link: <a href="https://web.archive.org/web/20180613053713/https://www.transformnow.in/">http://transformnow.in/ (web archive)</a>
-          </li>
-        </div>
-      </div>
-    </div>
-    <div class="card card-gap">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/ape.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">Ape Unit GmbH, Berlin  </span>
-              <span style="float: right">
-                <time datetime="2019-11">May 2018</time>
-                -
-                <time datetime="Present">Oct 2019</time>
-              </span>
-            </div>
-            <p class="subtitle is-6">Front-end Web Developer</p>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            Ape Unit works on the application side of 'Aeternity Blockchain'.
-          </li>
-          <li>
-            Worked majorly on an app named 'Blockchain-Explorer'.
-            It is a web-app that lets a user dive into 'Aeternity-Blockchain'and look the for transactions, blocks mined, etc.
-          </li>
-          <li>
-            Formed and led an India based tech team of 4 developers.
-          </li>
-          <li>
-            The team was responsible for all aspects of the product development cycle.
-          </li>
-          <li>
-            Stack Used: VueJS, ReactJS, SCSS, HTML.
-          </li>
-          <li>
-            Links: <a href="https://web.archive.org/web/20230608172514/https://explorer.aepps.com/"> https://explorer.aepps.com (web archive)</a> | <a href="https://github.com/aeternity/aepp-blockchain-explorer">https://github.com/aeternity/aepp-blockchain-explorer</a>
-          </li>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card card-gap">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/fac.jpg" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">Faculty360</span>
-              <span style="float: right">
-                <time datetime="2019-11">Sep 2017</time>
-                -
-                <time datetime="Present">Sep 2017</time>
-              </span>
-            </div>
-            <p class="subtitle is-6">Freelance Web Developer</p>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            Developed the front-end of the website for Faculty360 (a faculty recruitment platform) from scratch.
-          </li>
-          <li>
-            Stack used: HTML, CSS, Bootstrap, Javascript
-          </li>
-          <li>
-            Link: <a href="https://web.archive.org/web/20190626102938/https://www.faculty360.com/">https://faculty360.com (web archive)</a>
-          </li>
-
-        </div>
-      </div>
-    </div>
-    <div class="card card-gap">
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-48x48">
-              <img src="img/transcend.webp" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div>
-              <span class="title is-4">Transcend Labs, Bangalore</span>
-              <span style="float: right">
-                <time datetime="2019-11">May 2016</time>
-                -
-                <time datetime="Present">Feb 2017</time>
-              </span>
-            </div>
-            <span class="subtitle is-6">Software Developer Internship</span>
-          </div>
-        </div>
-        <div class="content">
-          <li>
-            Worked on implementing an inventory management solution for online
-            marketplaces, for a business. The work involved writing scripts using APIs to automate tasks
-          </li>
-          <li>
-            Developed a web app named Repricer which notified the user via SMS if an item was available in a given price/ condition range on any online marketplaces (eBay, Amazon, Discogs).
-          </li>
-          <li>
-            Stack used: Python, MySQL
-          </li>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification">
-                <p class="title">TransformNow</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/transform0.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Faculty360</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/fac.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Blockchain Explorer</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/explorer.aepps.com_.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-12">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article class="tile is-child notification">
-                    <p class="title">LifeBlocks</p>
-                    <figure class="image is-4by3">
-                      <img class="modal-trigger" data-target="project-3-modal" src="img/lifeblocks.png">
-                    </figure>
-                  </article>
-                </div>
-
-                <div class="tile is-parent is-vertical">
-
-                </div>
-                <div class="tile is-parent is-vertical">
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Modals -->
-  <div id="project-1-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Faculty360</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <p class="image is-3by2">
-          <img src="img/fac.png" alt="">
-        </p>
-
-        <div class="content">
-          Faculty360 is a faculty recruitment platform. We developed the front-end part of the platform from scratch.<br>
-          <a href="https://www.faculty360.com" target="_blank">https://www.faculty360.com</a>
-        </div>
-
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">SASS</span>
-          <span class="tag">REACTJS</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Aeternity Blockchain Explorer</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active image is-3by2">
-              <img src="img/explorer.aepps.com_.png" alt="Explorer" style="width:100%;">
-            </div>
-
-            <div class="item image is-3by2">
-              <img src="img/explorer.aepps.com_%20(1).png" alt="Explorer" style="width:100%;">
-            </div>
-
-            <div class="item image is-3by2">
-              <img src="img/explorer.aepps.com_%20(2).png" alt="Explorer" style="width:100%;">
-            </div>
-            <div class="item image is-3by2">
-              <img src="img/explorer.aepps.com_%20(3).png" alt="Explorer" style="width:100%;">
-            </div>
-            <div class="item image is-3by2">
-              <img src="img/explorer.aepps.com_%20(4).png" alt="Explorer" style="width:100%;">
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <div class="content">
-          Aeternity Blockchain Explorer is a web-app which
-          lets a user dive into 'Aeternity-Blockchain'and look the for transactions, blocks
-          mined, account details etc.
-          <br>
-          <a href="https://explorer.aepps.com">https://explorer.aepps.com</a>
-        </div>
-
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">SASS</span>
-          <span class="tag">Javascript</span>
-          <span class="tag">VueJS</span>
-          <span class="tag">Vuex</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">LifeBlocks</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <p class="image is-3by2">
-          <img src="img/lifeblocks.png" alt="">
-        </p>
-
-        <div class="content">
-          Lifeblocks is an experimental Trustless Certification Verification using the Ethereum Protocol.
-          It enables the institutes to issue certificates on the blockchain, which can later be easily verified by any party,
-          and thereby reducing the cost for certificate/resume verification.
-          <br>
-          <a href="https://github.com/ror-shubham/lifeblocks-public">https://github.com/ror-shubham/lifeblocks-public</a>
-        </div>
-
-        <div class="tags">
-          <span class="tag">ReactJS</span>
-          <span class="tag">Ethereum</span>
-          <span class="tag">Solidity</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-4-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">TransformNow</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel2" data-slide-to="1"></li>
-            <li data-target="#myCarousel2" data-slide-to="2"></li>
-            <li data-target="#myCarousel2" data-slide-to="3"></li>
-            <li data-target="#myCarousel2" data-slide-to="4"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active image is-1-mobile">
-              <img src="img/transform1.png" alt="Transform" style="width:100%;">
-            </div>
-
-            <div class="item image is-1-mobile">
-              <img src="img/transform2.png" alt="Transform" style="width:100%;">
-            </div>
-            <div class="item image is-1-mobile">
-              <img src="img/transform3.png" alt="Transform" style="width:100%;">
-            </div>
-            <div class="item image is-1-mobile">
-              <img src="img/transform4.png" alt="Transform" style="width:100%;">
-            </div>
-            <div class="item image is-1-mobile">
-              <img src="img/transform5.png" alt="Transform" style="width:100%;">
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <div class="content">
-          TransformNow is product helping people eat healthy, planning their diets, helping them with ingredients and much more.
-          <br>
-          <a href="http://transformnow.in/">http://transformnow.in/</a>
-        </div>
-
-        <div class="tags">
-          <span class="tag">ReactJS</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">Javascript</span>
-          <span class="tag">React-saga</span>
-          <span class="tag">Reselect</span>
-          <span class="tag">PWA</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Education</h1>
-      <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Indian Institute of Technology Roorkee</p>
-            <p class="subtitle is-6">Integrated Masters of Technology in
-              Geological Technology <time datetime="2016-9">2014</time> - <time
-                datetime="2019-9">2019</time></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Contact</h1>
-      <hr />
-      <nav class="level">
-          <div class="level-item has-text-centered">
-            <div>
-              <a href="https://github.com/ror-shubham" class="icon is-large">
-                <i class="fab fa-2x fa-github"></i>
-              </a>
-              <p class="heading"><a href="https://github.com/ror-shubham">github.com/ror-shubham</a></p>
-            </div>
-          </div>
-          <div class="level-item has-text-centered">
-              <div>
-                  <a href="mailto:ror.shubh@gmail.com" class="icon is-large">
-                    <i class="fas fa-2x fa-envelope"></i>
-                  </a>
-                  <p class="heading"><a href="mailto:ror.shubh@gmail.com">ror.shubh@gmail.com</a></p>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                  <a href="https://www.linkedin.com/in/ror-shubham/" class="icon is-large">
-                    <i class="fab fa-2x fa-linkedin-in"></i>
-                  </a>
-                  <p class="heading"><a href="https://www.linkedin.com/in/ror-shubham/">linkedin</a></p>
-              </div>
-            </div>
-        </nav>
-    </div>
-  </section>
-
-
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-    </div>
-  </footer>
-
-  <script src="js/bundle.js"></script>
 </body>
-
 </html>
