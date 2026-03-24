@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TypeScript on Shubham | Full Stack &amp; AI Engineer</title>
+    <link>http://localhost:1313/tags/typescript/</link>
+    <description>Recent content in TypeScript on Shubham | Full Stack &amp; AI Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6sense: From Hackathons to AI Pipelines</title>
+      <link>http://localhost:1313/posts/pandora/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/pandora/</guid>
+      <description>A 4.5-year journey scaling frontend architectures, merging acquisitions, building big data pipelines, and shipping Generative AI infrastructure.</description>
+    </item>
+    <item>
+      <title>AI Account Summary — 20K&#43; Daily AI Summaries</title>
+      <link>http://localhost:1313/posts/ai-account-summary/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/ai-account-summary/</guid>
+      <description>Built an AI engine generating 20,000+ account summaries daily with buying stage predictions, intent insights, and next-action recommendations.</description>
+    </item>
+  </channel>
+</rss>

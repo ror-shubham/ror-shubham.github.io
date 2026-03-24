@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Apollo on Shubham | Full Stack &amp; AI Engineer</title>
+    <link>http://localhost:1313/tags/apollo/</link>
+    <description>Recent content in Apollo on Shubham | Full Stack &amp; AI Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/apollo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales Dashboards</title>
+      <link>http://localhost:1313/posts/sales-dashboard/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:10 +0530</pubDate>
+      <guid>http://localhost:1313/posts/sales-dashboard/</guid>
+      <description>&lt;p&gt;OrangeSomething shut down its operations soon after Covid lockdowns. My journey with 6sense started soon thereafter.&lt;/p&gt;
+&lt;p&gt;My first project was to create a new app named Sales Dashboards from Scratch. I led the frontend development of this app.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was sole Frontend developer responsible for creating the Frontend architecture, setting up boilerplate code,
+setting up the CI/CD pipeline, and creating the initial set of reusable components. Two other developers joined later to help with the development.&lt;/li&gt;
+&lt;li&gt;The architecture we chose was &lt;code&gt;Javascript&lt;/code&gt; + &lt;code&gt;React&lt;/code&gt; + &lt;code&gt;GraphQL&lt;/code&gt; + &lt;code&gt;Apollo&lt;/code&gt;. The backend was built with Django&lt;/li&gt;
+&lt;li&gt;Developing this app was a great experience where we spent 3 months in hackathon mode and were pushing patches till the last minute.&lt;/li&gt;
+&lt;li&gt;The app went live in November 2020, and I was responsible for the maintaining and supporting the Frontend for the next 4.5 years till it was shut down in March 2025. RIP 🪦&lt;/li&gt;
+&lt;li&gt;The app was a starting point for the sales team to get insights and recommendations for their accounts. It was a single page app with multiple tabs.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

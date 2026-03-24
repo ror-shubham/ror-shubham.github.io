@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ReactJS on Shubham | Full Stack &amp; AI Engineer</title>
+    <link>http://localhost:1313/tags/reactjs/</link>
+    <description>Recent content in ReactJS on Shubham | Full Stack &amp; AI Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:10 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales Intelligence</title>
+      <link>http://localhost:1313/posts/si/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:10 +0530</pubDate>
+      <guid>http://localhost:1313/posts/si/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;6sense acquired a company named Slintel. Slintel and legacy 6sense Sales Intelligence were merged to form new Sales
+Intelligence app I was part of 3 member architect team responsible for taking technology decisions which included
+creating boilerplate to connect with our backend, switch to typescript from javascript, using craco framework, porting
+reusable front components from legacy app.&lt;/li&gt;
+&lt;li&gt;The ideation started with the problem statement of merging the two apps. We started thinking of just adding one
+app&amp;rsquo;s Frontend as an iframe in the other app, but instead we ended up with a total UI overhaul, complete new design
+language and major changes in architecture.&lt;/li&gt;
+&lt;li&gt;This was a big project which took 5 months and 15 engineers and a lot of late nights.&lt;/li&gt;
+&lt;li&gt;The app was a huge success bringing in 20 million+ revenue&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Sales Dashboards</title>
+      <link>http://localhost:1313/posts/sales-dashboard/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:10 +0530</pubDate>
+      <guid>http://localhost:1313/posts/sales-dashboard/</guid>
+      <description>&lt;p&gt;OrangeSomething shut down its operations soon after Covid lockdowns. My journey with 6sense started soon thereafter.&lt;/p&gt;
+&lt;p&gt;My first project was to create a new app named Sales Dashboards from Scratch. I led the frontend development of this app.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was sole Frontend developer responsible for creating the Frontend architecture, setting up boilerplate code,
+setting up the CI/CD pipeline, and creating the initial set of reusable components. Two other developers joined later to help with the development.&lt;/li&gt;
+&lt;li&gt;The architecture we chose was &lt;code&gt;Javascript&lt;/code&gt; + &lt;code&gt;React&lt;/code&gt; + &lt;code&gt;GraphQL&lt;/code&gt; + &lt;code&gt;Apollo&lt;/code&gt;. The backend was built with Django&lt;/li&gt;
+&lt;li&gt;Developing this app was a great experience where we spent 3 months in hackathon mode and were pushing patches till the last minute.&lt;/li&gt;
+&lt;li&gt;The app went live in November 2020, and I was responsible for the maintaining and supporting the Frontend for the next 4.5 years till it was shut down in March 2025. RIP 🪦&lt;/li&gt;
+&lt;li&gt;The app was a starting point for the sales team to get insights and recommendations for their accounts. It was a single page app with multiple tabs.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Orangesomething</title>
+      <link>http://localhost:1313/posts/orangesomething/</link>
+      <pubDate>Sun, 12 Apr 2020 21:05:14 +0530</pubDate>
+      <guid>http://localhost:1313/posts/orangesomething/</guid>
+      <description>&lt;p&gt;OrangeSomething.com was D2C platform for affordable Beauty and Personal Care products, incubated by Blinkit.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I was the lead Developer, responsible for planning and implementing all technical developments.&lt;/li&gt;
+&lt;li&gt;Migrated the platform’s frontend from Shopify to a ReactJS Single-Page Application (SPA), reducing average load time from 12 seconds to 2-3 seconds, significantly improving user experience.&lt;/li&gt;
+&lt;li&gt;Designed and developed an Android app for the platform, resulting in improved customer retention, higher average order value (AOV), and increased conversion rates.&lt;/li&gt;
+&lt;li&gt;Technologies Used: ReactJS, JavaScript, HTML, CSS, Kotlin&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Transformnow</title>
+      <link>http://localhost:1313/posts/transformnow/</link>
+      <pubDate>Wed, 01 Jan 2020 21:14:21 +0530</pubDate>
+      <guid>http://localhost:1313/posts/transformnow/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TransformNow&lt;/strong&gt; is a platform dedicated to promoting healthy eating by offering
+personalized diet plans, ingredient recommendations, and more.&lt;/p&gt;
+&lt;p&gt;Key Contributions &amp;amp; Achievements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed and developed a Progressive Web App (PWA) from scratch, enabling
+users to seamlessly plan and manage healthy diets.&lt;/li&gt;
+&lt;li&gt;Delivered a comprehensive application with over 30+ interactive pages,
+optimized for performance and scalability.&lt;/li&gt;
+&lt;li&gt;Achieved 90+ Lighthouse scores for performance, accessibility, and SEO,
+ensuring a fast and user-friendly experience.&lt;/li&gt;
+&lt;li&gt;Technologies Used: ReactJS, JavaScript, HTML, CSS&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Apeunit: Frontend Developer</title>
+      <link>http://localhost:1313/posts/apeunit/</link>
+      <pubDate>Sat, 12 Oct 2019 21:07:37 +0530</pubDate>
+      <guid>http://localhost:1313/posts/apeunit/</guid>
+      <description>&lt;p&gt;Ape Unit is a global network of designers, developers, known for its innovative and exploratory mindset, the company focuses on blockchain, decentralization, climate change projects.&lt;/p&gt;
+&lt;p&gt;Role Highlights:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Led the development of Blockchain Explorer, a sophisticated web app enabling users to delve into the Aeternity Blockchain, exploring transactions, mined blocks, and more.&lt;/li&gt;
+&lt;li&gt;Live Links: Blockchain Explorer | GitHub Repository&lt;/li&gt;
+&lt;li&gt;Established and led a tech team of four developers in India, overseeing the complete product development lifecycle.&lt;/li&gt;
+&lt;li&gt;Employed Agile practices to optimize collaboration and ensure timely delivery of milestones.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Technologies Used: Vue.js, React.js, SCSS, HTML&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Faculty360</title>
+      <link>http://localhost:1313/posts/faculty360/</link>
+      <pubDate>Fri, 01 Sep 2017 21:18:14 +0530</pubDate>
+      <guid>http://localhost:1313/posts/faculty360/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Faculty360&lt;/strong&gt; is a platform designed to streamline the process of faculty recruitment and management for educational institutions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.archive.org/web/20190626102938/https://www.faculty360.com/&#34;&gt;Faculty360 (web archive)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transcend Labs</title>
+      <link>http://localhost:1313/posts/transcend-labs/</link>
+      <pubDate>Wed, 01 Feb 2017 21:23:33 +0530</pubDate>
+      <guid>http://localhost:1313/posts/transcend-labs/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Worked on implementing an inventory management solution for online
+marketplaces, for a business. The work involved writing scripts using APIs to
+automate tasks&lt;/li&gt;
+&lt;li&gt;Developed a web app named Repricer which notified the user via SMS if an item
+was available in a given price/ condition range on any online marketplaces (eBay,
+Amazon, Discogs).&lt;/li&gt;
+&lt;li&gt;Technologies Used: Python, Flask, ReactJS, MySQL HTML, CSS&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

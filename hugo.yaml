@@ -1,0 +1,71 @@
+baseURL: https://w3shubh.com/
+locale: en-us
+title: "Shubham | Full Stack & AI Engineer"
+theme: ["PaperMod"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+params:
+  env: production
+  author: Shubham
+  description: "IIT Roorkee Graduate | Full Stack & AI Engineer — Building AI-powered products, scalable frontends, and big data pipelines."
+  keywords: ["Full Stack Developer", "AI Engineer", "React", "Python", "Django", "LLM", "Portfolio"]
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Shubham"
+    Content: "Full Stack & AI Engineer | IIT Roorkee '19 — Building AI-powered products, scalable frontends, and big data pipelines."
+    imageUrl: "img/me.jpeg"
+    imageTitle: "Shubham"
+    imageWidth: 200
+    imageHeight: 200
+    buttons:
+      - name: "📂 Projects"
+        url: "/posts/"
+      - name: "🏛️ Archives"
+        url: "/archives/"
+      - name: "👤 About"
+        url: "/about/"
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/ror-shubham"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/ror-shubham/"
+    - name: "email"
+      url: "mailto:ror.shubh@gmail.com"
+    - name: "instagram"
+      url: "https://www.instagram.com/shubham_karnal/"
+
+menu:
+  main:
+    - identifier: posts
+      name: Projects
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 15
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 25
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30

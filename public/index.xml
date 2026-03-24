@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shubham | Full Stack &amp; AI Engineer</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Shubham | Full Stack &amp; AI Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6sense: From Hackathons to AI Pipelines</title>
+      <link>http://localhost:1313/posts/pandora/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/pandora/</guid>
+      <description>A 4.5-year journey scaling frontend architectures, merging acquisitions, building big data pipelines, and shipping Generative AI infrastructure.</description>
+    </item>
+    <item>
+      <title>AI Email Writer — LLM-Powered Outbound at Scale</title>
+      <link>http://localhost:1313/posts/ai-email-writer/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/ai-email-writer/</guid>
+      <description>Built an LLM email generation system processing 1,500+ emails daily with multi-layer guardrails, achieving 42% reply rates.</description>
+    </item>
+    <item>
+      <title>AI Account Summary — 20K&#43; Daily AI Summaries</title>
+      <link>http://localhost:1313/posts/ai-account-summary/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/ai-account-summary/</guid>
+      <description>Built an AI engine generating 20,000+ account summaries daily with buying stage predictions, intent insights, and next-action recommendations.</description>
+    </item>
+    <item>
+      <title>OrangeSomething — Founding Engineer at a Blinkit-Incubated D2C Brand</title>
+      <link>http://localhost:1313/posts/orangesomething/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/orangesomething/</guid>
+      <description>Led the full tech stack for a D2C beauty platform incubated at Blinkit — migrated from Shopify to React (12s → 3s load) and built a native Android app.</description>
+    </item>
+    <item>
+      <title>Big Data Engineering: Optimizing PySpark Pipelines at 6sense</title>
+      <link>http://localhost:1313/posts/big-data-pipelines/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/big-data-pipelines/</guid>
+      <description>Owned critical big data infrastructure handling millions of signals daily. Optimized a core PySpark DAG saving 45 mins/day and retired legacy systems to save $130K annually.</description>
+    </item>
+    <item>
+      <title>Ape Unit — Blockchain Explorer &amp; Team Building in Berlin</title>
+      <link>http://localhost:1313/posts/apeunit/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/apeunit/</guid>
+      <description>Led development of a blockchain explorer for the Aeternity network and managed a new tech team of four developers across India and Berlin.</description>
+    </item>
+    <item>
+      <title>Building with RAG and Vector Databases</title>
+      <link>http://localhost:1313/posts/rag-vector-databases/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/rag-vector-databases/</guid>
+      <description>Designing advanced LLM architectures using Retrieval-Augmented Generation to ground AI responses in proprietary data.</description>
+    </item>
+    <item>
+      <title>TransformNow — A PWA for Healthy Living</title>
+      <link>http://localhost:1313/posts/transformnow/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/transformnow/</guid>
+      <description>Designed and developed a Progressive Web App with 30+ pages scoring 90+ on Lighthouse for performance, accessibility, and SEO.</description>
+    </item>
+    <item>
+      <title>LifeBlocks: Trustless Certificate Verification on Ethereum</title>
+      <link>http://localhost:1313/posts/lifeblocks-web3/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/lifeblocks-web3/</guid>
+      <description>Developed a blockchain system using Solidity and React enabling institutions to issue verifiable digital certificates.</description>
+    </item>
+    <item>
+      <title>Transcend Labs — Marketplace Automation &amp; Inventory Management</title>
+      <link>http://localhost:1313/posts/transcend-labs/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/transcend-labs/</guid>
+      <description>Built a full-stack inventory management solution and a price-tracking Repricer app with SMS notifications for eBay, Amazon, and Discogs.</description>
+    </item>
+    <item>
+      <title>Faculty360 — Faculty Recruitment Platform</title>
+      <link>http://localhost:1313/posts/faculty360/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/faculty360/</guid>
+      <description>Developed the frontend for a faculty recruitment and management platform for educational institutions.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About Shubham</description>
+    </item>
+  </channel>
+</rss>

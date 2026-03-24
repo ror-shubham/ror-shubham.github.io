@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vector Database on Shubham | Full Stack &amp; AI Engineer</title>
+    <link>http://localhost:1313/tags/vector-database/</link>
+    <description>Recent content in Vector Database on Shubham | Full Stack &amp; AI Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/vector-database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building with RAG and Vector Databases</title>
+      <link>http://localhost:1313/posts/rag-vector-databases/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0530</pubDate>
+      <guid>http://localhost:1313/posts/rag-vector-databases/</guid>
+      <description>Designing advanced LLM architectures using Retrieval-Augmented Generation to ground AI responses in proprietary data.</description>
+    </item>
+  </channel>
+</rss>
