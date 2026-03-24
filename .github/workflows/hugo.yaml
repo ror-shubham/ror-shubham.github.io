@@ -42,6 +42,7 @@ jobs:
             --gc \
             --minify \
             --baseURL "https://w3shubh.com/"
+          echo "w3shubh.com" > public/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
