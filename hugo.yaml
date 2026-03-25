@@ -10,6 +10,7 @@ outputs:
     - JSON # necessary for search
 
 params:
+  goatcounter: "w3shubh"
   env: production
   author: Shubham
   description: "IIT Roorkee Graduate | Full Stack & AI Engineer — Building AI-powered products, scalable frontends, and big data pipelines."
